@@ -1,2 +1,17 @@
-@import './common';
-@import './example';
+// base
+@import './base/reset';
+
+@import './utils/vars';
+
+@import '../../node_modules/modern-normalize/modern-normalize.css';
+
+
+// components
+@import './components/container';
+
+
+// layout
+@import './layout/header';
+@import './layout/hero';
+@import './layout/properties';
+@import './layout/about';

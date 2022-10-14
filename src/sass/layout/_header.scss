@@ -1,0 +1,39 @@
+.header {
+  background-color: $main-color;
+  display: flex;
+  // outline: 1px solid teal; //!прибрати
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__list {
+  display: flex;
+  margin-left: auto;
+}
+
+.header__item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.header__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $second-text-color;
+
+  &:hover {
+    color: $hover-color;
+  }
+
+  &:focus {
+    color: $hover-color;
+  }
+}
