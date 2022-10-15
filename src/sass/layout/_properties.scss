@@ -1,6 +1,8 @@
 .properties {
   padding-top: 40px;
+  // padding-right: 10px;
   padding-bottom: 40px;
+  // padding-left: 10px;
   background-color: #283036;
 }
 
@@ -14,8 +16,7 @@
   color: $main-text-color;
 
   @media screen and (min-width: 768px) {
-      font-size: 36px;
-
+    font-size: 36px;
   }
 }
 
@@ -37,12 +38,11 @@
   }
 
   @media screen and (min-width: 768px) {
-    // &:not(:first-child) {
-      flex-basis: calc((100% - 30px) / 2);
+    flex-basis: calc((100% - 90px) / 4); //TODO передивитися на 768
+    &:not(:first-child) {
       margin-left: 30px;
-    // }
+    }
   }
-
 }
 
 .properties__wrap-icon {
@@ -56,7 +56,7 @@
 
 .properties__icon {
   // align-items: center;
-  
+
   // justify-content: center;
   fill: teal;
 }

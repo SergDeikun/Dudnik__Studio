@@ -1,0 +1,66 @@
+.footer{
+    background-color: $main-color;//!
+}
+
+.footer__container{
+text-align: center;
+}
+
+// Contacts
+
+.footer__contacts-wrap{
+}
+
+.text{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: .03em;
+    color: $main-text-color;
+}
+
+.footer__contacts-list{
+    text-align: center;
+
+}
+
+.footer__contacts-item{
+    text-align: center;
+    // display: flex;
+    // align-items: center;
+}
+
+.footer__contacts-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $second-text-color;
+    
+}
+
+.footer__contacts-icon{
+    margin-right: 5px;
+    fill: teal;
+}
+
+// Social network 
+
+.footer__social-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__social-item:not(:first-child){
+margin-left: 10px;
+}
+// .footer__social-item{
+//     margin-left: 5px;
+//     }
+
+.footer__social-link{
+    // display: flex;
+
+    // align-items: center;
+    // justify-content: center;
+}
