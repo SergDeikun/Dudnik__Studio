@@ -3,7 +3,14 @@
   // padding-right: 10px;
   padding-bottom: 40px;
   // padding-left: 10px;
-  background-color: #283036;
+  background-color: $main-color;
+
+}
+
+.properties__container{
+  max-width: 100%;
+  // display: flex;
+  // align-items: center;
 }
 
 .properties__title {
@@ -39,6 +46,7 @@
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 90px) / 4); //TODO передивитися на 768
+    
     &:not(:first-child) {
       margin-left: 30px;
     }
