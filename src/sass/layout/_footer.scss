@@ -5,7 +5,6 @@
 
 .footer__container {
   max-width: 100%; //TODO дає скрол
-  // text-align: center;
 }
 
 // logo & title
@@ -38,7 +37,10 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
   color: $main-text-color;
 }
 
@@ -62,6 +64,11 @@
     justify-content: center;
   }
   color: $second-text-color;
+
+  &:hover,
+  &:focus{
+    color: $hover-color
+  }
 }
 
 .footer__contacts-icon {
@@ -72,42 +79,6 @@
 // Social network
 
 .footer__social-list {
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 
-.footer__social-item {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  width: 50px;
-  height: 50px;
-
-  &:not(:first-child) {
-    margin-left: 10px;
-  }
-}
-
-.footer__social-link {
-  width: 100%;
-  height: 100%;
-  border-radius: 25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer__viber-hover:hover {
-  background-color: #7360f2;
-}
-.footer__telegram-hover:hover {
-  background-color: #0088cc;
-}
-.footer__whatsapp-hover:hover {
-  background-color: #43d854;
-}
-
-.footer__social-icon {
-  fill: $main-text-color;
-}

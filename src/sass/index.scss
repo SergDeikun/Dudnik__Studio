@@ -8,12 +8,16 @@
 
 // components
 @import './components/container';
+@import './components/logo.scss';
+@import './components/social-list';
+
 // @import "~bootstrap/scss/bootstrap";
 // @import "../node_modules/bootstrap/scss/bootstrap";
 
 
 // layout
 @import './layout/header';
+@import './layout/mob-menu';
 @import './layout/hero';
 @import './layout/properties';
 @import './layout/about';

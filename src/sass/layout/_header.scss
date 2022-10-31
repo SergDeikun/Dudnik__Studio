@@ -1,9 +1,25 @@
-.header {
+header {
   background-color: $main-color;
-  display: flex;
-  // outline: 1px solid teal; //!прибрати
 }
 
+.header__container{
+  display: flex;
+}
+
+.mob-menu__open-btn{
+  margin-left: auto;
+    border: none;
+    cursor: pointer;
+    background-color: $main-color;
+
+    @media screen and(min-width:768px) {
+      display: none;
+    }
+}
+
+.mob-menu__icon-open{
+  fill: $main-text-color
+}
 
 .header__nav {
   display: flex;
@@ -11,8 +27,12 @@
 }
 
 .header__list {
-  display: flex;
-  margin-left: auto;
+  display: none;
+
+  @media screen and(min-width:768px) {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .header__item:not(:first-child) {
@@ -30,11 +50,10 @@
   letter-spacing: 0.02em;
   color: $second-text-color;
 
-  &:hover {
-    color: $hover-color;
-  }
-
+  &:hover,
   &:focus {
     color: $hover-color;
   }
 }
+
+
