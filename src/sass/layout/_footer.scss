@@ -26,12 +26,18 @@
   }
 }
 
+.footer__link-logo {
+  display: flex;
+  justify-content: center;
+}
+
 // Contacts
 
 .footer__contacts-wrap {
 }
 
 .text {
+  margin-top: 10px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -66,8 +72,8 @@
   color: $second-text-color;
 
   &:hover,
-  &:focus{
-    color: $hover-color
+  &:focus {
+    color: $hover-color;
   }
 }
 
@@ -81,4 +87,3 @@
 .footer__social-list {
   justify-content: center;
 }
-

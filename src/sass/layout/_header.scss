@@ -2,26 +2,28 @@ header {
   background-color: $main-color;
 }
 
-.header__container{
+.header__container {
   display: flex;
+  //   width: 100%;
 }
 
-.mob-menu__open-btn{
+.mob-menu__open-btn {
   margin-left: auto;
-    border: none;
-    cursor: pointer;
-    background-color: $main-color;
+  border: none;
+  cursor: pointer;
+  background-color: $main-color;
 
-    @media screen and(min-width:768px) {
-      display: none;
-    }
+  @media screen and(min-width:768px) {
+    display: none;
+  }
 }
 
-.mob-menu__icon-open{
-  fill: $main-text-color
+.mob-menu__icon-open {
+  fill: $main-text-color;
 }
 
 .header__nav {
+  width: 100%;
   display: flex;
   align-items: center;
 }
@@ -55,5 +57,3 @@ header {
     color: $hover-color;
   }
 }
-
-

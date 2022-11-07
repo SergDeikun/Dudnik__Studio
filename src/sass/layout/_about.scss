@@ -20,6 +20,12 @@
 //   align-items: center;
 // }
 
+.swiper {
+  @media screen and (min-width: 1280px) {
+    width: 600px;
+    height: 500px;
+  }
+}
 
 .about__image {
   @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -73,7 +79,7 @@
   }
 }
 
-.about__icon{
+.about__icon {
   fill: $hover-color;
 }
 
