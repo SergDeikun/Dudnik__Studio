@@ -1,11 +1,11 @@
 .portfolio {
-  background-color: $main-color;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.portfolio-container {
-  width: 100%;
+.carousel__button {
+  background-color: white;
+  opacity: 0.3;
 }
 
 .portfolio__title {
@@ -14,16 +14,12 @@
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 100px;
   color: $main-text-color;
 
   @media screen and (min-width: 768px) {
     font-size: 36px;
   }
-}
-
-.portfolio__box {
-  // display: flex;
 }
 
 .portfolio__list {
@@ -33,41 +29,45 @@
   }
 }
 
+
 .portfolio__item {
-  height: 300px;
+  // width: 520px;
+  // height: 400px;
+  // margin-right: 10px;
+
   cursor: pointer;
 
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
+  // &:not(:last-child) {
+  //   margin-bottom: 20px;
+  // }
 
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    flex-basis: calc((100% - 20px) / 2);
+  // @media screen and (min-width: 768px) and (max-width: 1279px) {
+  // flex-basis: calc((100% - 20px) / 2);
 
-    &:nth-child(2n + 1) {
-      margin-right: 20px;
-    }
+  // &:nth-child(2n + 1) {
+  // margin-right: 20px;
+  // }
 
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0px;
-    }
-  }
+  // &:nth-last-child(-n + 2) {
+  //   margin-bottom: 0px;
+  // }
+  // }
 
-  @media screen and (min-width: 1280px) {
-    margin-right: 20px;
-    flex-basis: calc((100% - 40px) / 3);
+  // @media screen and (min-width: 1280px) {
+  //   margin-right: 20px;
+  //   flex-basis: calc((100% - 40px) / 3);
 
-    &:nth-child(3n + 3) {
-      margin-right: 0px;
-    }
-  }
+  //   &:nth-child(3n + 3) {
+  //     margin-right: 0px;
+  //   }
+  // }
 
-  &:nth-last-child(-n + 3) {
-    margin-bottom: 0px;
-  }
+  // &:nth-last-child(-n + 3) {
+  //   margin-bottom: 0px;
+  // }
 }
 
 .portfolio__img {
-  height: 100%;
+  height: 320px;
   object-fit: cover;
 }

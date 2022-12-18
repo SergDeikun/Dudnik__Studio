@@ -1,17 +1,20 @@
-header {
-  background-color: $main-color;
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .header__container {
   display: flex;
-    width: 100%;
+  padding-top: 10px;
 }
 
 .mob-menu__open-btn {
   margin-left: auto;
   border: none;
   cursor: pointer;
-  background-color: $main-color;
+  background-color: inherit;
 
   @media screen and(min-width:768px) {
     display: none;
@@ -56,4 +59,63 @@ header {
   &:focus {
     color: $hover-color;
   }
+}
+
+// MobMenu
+.mob-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  padding: 10px 20px 10px 20px;
+
+  background-color: #242B33;
+  z-index: 999;
+}
+
+.mob-menu__close-btn {
+  position: absolute;
+  top: 10;
+  right: 10;
+  border: none;
+  cursor: pointer;
+  background-color: #242B33;
+}
+
+.mob-menu__icon-close {
+  fill: $main-text-color;
+}
+
+.mob-menu__list {
+  margin-top: 50px;
+}
+
+.mob-menu__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.mob-menu__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: $second-text-color;
+
+  &:hover,
+  &:focus {
+    color: $hover-color;
+  }
+}
+
+.mob-menu__social-wrap {
+  margin-top: auto;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  display: none;
 }

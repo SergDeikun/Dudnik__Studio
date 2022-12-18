@@ -1,14 +1,9 @@
 .properties {
-  padding-top: 40px;
-  // padding-right: 10px;
-  padding-bottom: 40px;
-  // padding-left: 10px;
-  background-color: $main-color;
-
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .properties__container{
-  max-width: 100%; //TODO дає скрол
   // display: flex;
   // align-items: center;
 }
@@ -19,7 +14,7 @@
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   color: $main-text-color;
 
   @media screen and (min-width: 768px) {
@@ -30,26 +25,50 @@
 .properties__list {
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
+
   }
 }
 
 .properties__item {
-  padding-bottom: 10px;
-  border-radius: 25px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+ 
+  // width: 100%;
+  // padding-bottom: 10px;
+  // border-radius: 25px;
+  // box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 
-  @media screen and (max-width: 767px) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
+@media screen and (max-width:767px) {
+   
+  &:not(:last-child){
+    margin-bottom: 50px;
+  }
+}
+
+  @media screen and (min-width: 768px) and (max-width:1279px) {
+  margin-bottom: 50px;
+
+      // &:not(:first-child){
+      //   margin-left: 30px;
+      // }
+    flex-basis: calc((100% - 30px) / 2); 
+
+    &:nth-child(2n) {
+          margin-left: 30px;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
     }
   }
 
-  @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 90px) / 4); //TODO передивитися на 768
-    
-    &:not(:first-child) {
+  @media screen and (min-width: 1280px) {
+    flex-basis: calc((100% - 90px) / 4);
+
+    &:not(:first-child){
       margin-left: 30px;
     }
+
+    
   }
 }
 
@@ -57,9 +76,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
-  width: 100%;
-  height: 120px;
+  margin-bottom: 53px;
+  // width: 100%;
+  // width: 100px;
+
+  // height: 120px;
 }
 
 .properties__icon {
