@@ -1,6 +1,6 @@
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-image: linear-gradient(
       180deg,
       #242b33 11.98%,
@@ -11,23 +11,37 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  // max-width: 1600px;
-  // margin-right: auto;
-  // margin-left: auto;
 }
 
 .hero__container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // width: 100%;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+}
+
+.hero__title {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 320px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $main-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    max-width: 545px;
+  }
 }
 
 .hero__link-tel {
-  position: absolute;
-  top: 540px;
-  right: 65px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-top: 100px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.14;
@@ -47,20 +61,4 @@
 .hero__tel-icon {
   margin-right: 5px;
   fill: $second-text-color;
-}
-
-.hero__title {
-  // margin-top: 100px;
-  max-width: 320px;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: $main-text-color;
-
-  @media screen and (min-width: 768px) {
-    font-size: 48px;
-    max-width: 545px;
-  }
 }
