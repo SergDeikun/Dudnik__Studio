@@ -1,4 +1,1 @@
-// import * as bootstrap from 'bootstrap';
-// import openMobMenu from './js/openMobMenu';
 // import './sass/index.scss';
-// import { Fancybox, Carousel, Panzoom } from '@fancyapps/ui';

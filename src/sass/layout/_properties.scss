@@ -1,9 +1,11 @@
 .properties {
-  padding-top: 120px;
+  // padding-top: 120px;
+  padding-top: 30px;
+
   padding-bottom: 120px;
 }
 
-.properties__container{
+.properties__container {
   // max-width: 100%;
   // display: flex;
   // align-items: center;
@@ -16,6 +18,7 @@
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 100px;
+
   color: $main-text-color;
 
   @media screen and (min-width: 768px) {
@@ -23,54 +26,63 @@
   }
 }
 
-// .properties__list {
-//   @media screen and (min-width: 768px) {
-//     display: flex;
-//     flex-wrap: wrap;
-
-//   }
-// }
+.properties__list {
+  max-width: 100%;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+}
 
 .properties__item {
-  // width: 100%;
+  width: 270px;
+  // &:not(:last-child) {
+  //   margin-bottom: 50px;
+  // }
+  // &:not(:last-child){
+  //   margin-bottom: 50px;
+  // }
   // padding-bottom: 10px;
   // border-radius: 25px;
   // box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  margin-bottom: 50px;
 
-// @media screen and (max-width:767px) {
-   
-//   &:not(:last-child){
-//     margin-bottom: 50px;
-//   }
-// }
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+  }
 
-  // @media screen and (min-width: 768px) and (max-width:1279px) {
-  // margin-bottom: 50px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    // gap:30px;
+    // width: 270px;
 
-  //     // &:not(:first-child){
-  //     //   margin-left: 30px;
-  //     // }
-  //   flex-basis: calc((100% - 30px) / 2); 
+    // margin-bottom: 50px;
 
-  //   &:nth-child(2n) {
-  //         margin-left: 30px;
-  //   }
+    // &:not(:first-child){
+    //   margin-left: 30px;
+    // }
+    // flex-basis: calc((100% - 30px) / 2);
 
-  //   &:nth-last-child(-n + 2) {
-  //     margin-bottom: 0px;
-  //   }
-  // }
+    // &:nth-child(2n) {
+    //       margin-left: 30px;
+    // }
 
-  // @media screen and (min-width: 1280px) {
-  //   flex-basis: calc((100% - 90px) / 4);
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
+  }
 
-  //   &:not(:first-child){
-  //     margin-left: 30px;
-  //   }
+  @media screen and (min-width: 1280px) {
+    // flex-basis: calc((100% - 90px) / 4);
 
-    
-  // }
+    // &:not(:first-child) {
+    //   margin-left: 30px;
+    // }
+  }
 }
 
 .properties__wrap-icon {
