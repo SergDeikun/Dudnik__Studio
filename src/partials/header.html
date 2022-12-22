@@ -1,15 +1,15 @@
 <header class="header">
   <div class="container header__container">
     <nav class="header__nav">
-      <a href="index.html" class="link-logo">
-        Dudnik_Studio
-      </a>
+      <a href="index.html" class="link-logo"> Dudnik_Studio </a>
       <ul class="header__list">
         <li class="header__item">
           <a href="#about-us" class="header__link">Про нас</a>
         </li>
         <li class="header__item">
-          <a id="#portfolio" href="#portfolio" class="header__link">Портфоліо</a>
+          <a href="#portfolio" class="header__link js-open-portfolio"
+            >Портфоліо</a
+          >
         </li>
         <li class="header__item">
           <a href="#contacts" class="header__link">Контакти</a>
@@ -18,7 +18,7 @@
     </nav>
     <button class="mob-menu__open-btn js-open-menu" type="button">
       <svg class="mob-menu__icon-open" width="32" height="32">
-        <use href="./images/icons.svg#icon-menu_open"/>
+        <use href="./images/icons.svg#icon-menu_open" />
       </svg>
     </button>
   </div>
@@ -26,27 +26,26 @@
   <!-- MobMenu -->
 
   <div class="mob-menu js-menu-container is-hidden">
-
     <button class="mob-menu__close-btn js-close-menu" type="button">
       <svg class="mob-menu__icon-close" width="32" height="32">
-        <use href="./images/icons.svg#icon-close"/>
+        <use href="./images/icons.svg#icon-close" />
       </svg>
     </button>
-    
+
     <a href="index.html" class="link-logo"> Dudnik_Studio </a>
-  
+
     <ul class="mob-menu__list">
       <li class="mob-menu__item">
-        <a href="#about-us" class="mob-menu__link">Про нас</a>
+        <a href="#about-us" class="mob-menu__link js-about-us">Про нас</a>
       </li>
       <li class="mob-menu__item">
-        <a href="#portfolio" class="mob-menu__link">Портфоліо</a>
+        <a href="#portfolio" class="mob-menu__link js-portfolio js-open-portfolio">Портфоліо</a>
       </li>
       <li class="mob-menu__item">
-        <a href="#contacts" class="mob-menu__link">Контакти</a>
+        <a href="#contacts" class="mob-menu__link js-contacts">Контакти</a>
       </li>
     </ul>
-  
+
     <div class="social-wrap mob-menu__social-wrap">
       <ul class="social-list">
         <li class="social-item">
@@ -54,21 +53,24 @@
             class="social-link viber-hover"
             href="viber://chat?number=%2B380730189820"
           >
-            <svg class="social-icon" width="32" height="32">
+            <svg class="social-icon" width="40" height="40">
               <use href="./images/icons.svg#icon-viber" />
             </svg>
           </a>
         </li>
         <li class="social-item">
           <a class="social-link telegram-hover" href="https://t.me/foklim">
-            <svg class="social-icon" width="32" height="32">
+            <svg class="social-icon" width="40" height="40">
               <use href="./images/icons.svg#icon-telegram" />
             </svg>
           </a>
         </li>
         <li class="social-item">
-          <a class="social-link whatsapp-hover" href="https://wa.me/380730189820">
-            <svg class="social-icon" width="32" height="32">
+          <a
+            class="social-link whatsapp-hover"
+            href="https://wa.me/380730189820"
+          >
+            <svg class="social-icon" width="40" height="40">
               <use href="./images/icons.svg#icon-whatsapp" />
             </svg>
           </a>
