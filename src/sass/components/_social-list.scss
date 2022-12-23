@@ -26,18 +26,26 @@
   align-items: center;
 }
 
-.social-icon {
+.social-icon__viber {
   fill: $main-text-color;
+  .social-link:hover &,
+  .social-link:focus & {
+    fill: #7360f2;
+  }
 }
-.viber-hover:hover,
-.viber-hover:focus {
-  background-color: #7360f2;
+
+.social-icon__telegram {
+  fill: $main-text-color;
+  .social-link:hover &,
+  .social-link:focus & {
+    fill: #0088cc;
+  }
 }
-.telegram-hover:hover,
-.telegram-hover:focus {
-  background-color: #0088cc;
-}
-.whatsapp-hover:hover,
-.whatsapp-hover:focus {
-  background-color: #43d854;
+
+.social-icon__whatsapp {
+  fill: $main-text-color;
+  .social-link:hover &,
+  .social-link:focus & {
+    fill: #43d854;
+  }
 }
