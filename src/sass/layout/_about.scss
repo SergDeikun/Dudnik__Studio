@@ -21,9 +21,9 @@
 }
 
 .about__container {
-  @media screen and (min-width: 768px) {
-    // display: flex;
-  }
+  // @media screen and (min-width: 1280px) {
+  //   display: flex;
+  // }
 }
 
 .about__text-title {
@@ -32,8 +32,21 @@
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: $main-text-color;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
   text-align: center;
+}
+
+.about__wrap-box{
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+
+  }
+}
+
+.about__text-box:not(:last-child){
+  margin-bottom: 10px;
 }
 
 
@@ -52,7 +65,7 @@
 .about__item-text {
   margin-left: 5px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: $second-text-color;

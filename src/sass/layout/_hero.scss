@@ -1,16 +1,28 @@
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  // padding-top: 150px;
+  // padding-bottom: 150px;
   background-image: linear-gradient(
       180deg,
       #242b33 11.98%,
       rgba(45, 52, 60, 0.38) 51.04%,
       #242b33 92.19%
     ),
-    url(../images//render-of-3d-contemporary-kitchen.jpg);
+    url(../images/render-of-3d-contemporary-kitchenw.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and(min-width:768px) {
+    background-image: linear-gradient(
+      180deg,
+      #242b33 11.98%,
+      rgba(45, 52, 60, 0.38) 51.04%,
+      #242b33 92.19%
+    ),
+    url(../images/hero-img-desktop.jpg);
+  }
 }
 
 .hero__container {

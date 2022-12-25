@@ -24,10 +24,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: fill 2150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon__viber {
   fill: $main-text-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   .social-link:hover &,
   .social-link:focus & {
     fill: #7360f2;
@@ -36,6 +39,8 @@
 
 .social-icon__telegram {
   fill: $main-text-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   .social-link:hover &,
   .social-link:focus & {
     fill: #0088cc;
@@ -44,6 +49,8 @@
 
 .social-icon__whatsapp {
   fill: $main-text-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   .social-link:hover &,
   .social-link:focus & {
     fill: #43d854;

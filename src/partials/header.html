@@ -26,56 +26,71 @@
   <!-- MobMenu -->
 
   <div class="mob-menu js-menu-container is-hidden">
-    <button class="mob-menu__close-btn js-close-menu" type="button">
-      <svg class="mob-menu__icon-close" width="32" height="32">
-        <use href="./images/icons.svg#icon-close" />
-      </svg>
-    </button>
+    <div class="container mob-menu-container">
+      <button class="mob-menu__close-btn js-close-menu" type="button">
+        <svg class="mob-menu__icon-close" width="32" height="32">
+          <use href="./images/icons.svg#icon-close" />
+        </svg>
+      </button>
 
-    <a href="index.html" class="link-logo"> Dudnik_Studio </a>
+      <a href="index.html" class="link-logo"> Dudnik_Studio </a>
 
-    <ul class="mob-menu__list">
-      <li class="mob-menu__item">
-        <a href="#about-us" class="mob-menu__link js-about-us">Про нас</a>
-      </li>
-      <li class="mob-menu__item">
-        <a href="#portfolio" class="mob-menu__link js-portfolio js-open-portfolio">Портфоліо</a>
-      </li>
-      <li class="mob-menu__item">
-        <a href="#contacts" class="mob-menu__link js-contacts">Контакти</a>
-      </li>
-    </ul>
-
-    <div class="social-wrap mob-menu__social-wrap">
-      <ul class="social-list">
-        <li class="social-item">
-          <a
-            class="social-link"
-            href="viber://chat?number=%2B380730189820"
-          >
-            <svg class="social-icon__viber" width="40" height="40">
-              <use href="./images/icons.svg#icon-viber" />
-            </svg>
-          </a>
+      <ul class="mob-menu__list">
+        <li class="mob-menu__item">
+          <a href="#about-us" class="mob-menu__link js-about-us">Про нас</a>
         </li>
-        <li class="social-item">
-          <a class="social-link" href="https://t.me/foklim">
-            <svg class="social-icon__telegram" width="40" height="40">
-              <use href="./images/icons.svg#icon-telegram" />
-            </svg>
-          </a>
-        </li>
-        <li class="social-item">
+        <li class="mob-menu__item">
           <a
-            class="social-link"
-            href="https://wa.me/380730189820"
+            href="#portfolio"
+            class="mob-menu__link js-portfolio js-open-portfolio"
+            >Портфоліо</a
           >
-            <svg class="social-icon__whatsapp" width="40" height="40">
-              <use href="./images/icons.svg#icon-whatsapp" />
-            </svg>
-          </a>
+        </li>
+        <li class="mob-menu__item">
+          <a href="#contacts" class="mob-menu__link js-contacts">Контакти</a>
         </li>
       </ul>
+
+      <div class="social-wrap mob-menu__social-wrap">
+        <ul class="social-list">
+          <li class="social-item">
+            <a
+              class="social-link"
+              target="_blank"
+              href="viber://chat?number=%2B380730189820"
+              aria-label="viber"
+            >
+              <svg class="social-icon__viber" width="40" height="40">
+                <use href="./images/icons.svg#icon-viber" />
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              class="social-link"
+              target="_blank"
+              href="https://t.me/foklim"
+              aria-label="telegram"
+            >
+              <svg class="social-icon__telegram" width="40" height="40">
+                <use href="./images/icons.svg#icon-telegram" />
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              class="social-link"
+              target="_blank"
+              href="https://wa.me/380730189820"
+              aria-label="whatsapp"
+            >
+              <svg class="social-icon__whatsapp" width="40" height="40">
+                <use href="./images/icons.svg#icon-whatsapp" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </header>
