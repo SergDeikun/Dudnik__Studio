@@ -62,8 +62,7 @@
   color: $second-text-color;
   transition: $transition-hover;
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: $hover-color;
   }
 }
@@ -81,10 +80,15 @@
 .mob-menu-container {
   display: flex;
   flex-direction: column;
+  text-align: center;
   justify-content: space-between;
 
   height: 100%;
   padding: 10px 20px 10px 20px;
+}
+
+.link-logo--header {
+  margin-top: 50px;
 }
 
 .mob-menu__close-btn {
@@ -107,16 +111,17 @@
 }
 
 .mob-menu__list {
-  margin-top: 50px;
+  // margin-top: 50px;
+  margin-top: 70px;
 }
 
 .mob-menu__item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .mob-menu__link {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 32px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: $second-text-color;
