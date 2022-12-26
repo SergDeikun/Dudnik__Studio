@@ -2,12 +2,13 @@
   text-align: center;
 }
 
-.contacts__text {
+.contacts__title {
   margin-top: 115px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   color: $main-text-color;
 
   @media screen and (min-width: 768px) {
@@ -21,6 +22,16 @@
   @media screen and (min-width: 768px) {
     margin-top: 75px;
   }
+}
+.contacts__item{
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+
+    // @media screen and (min-width: 768px) {
+    //     width: 450px;
+    //   }
+
 }
 
 .contacts__link {

@@ -1,7 +1,7 @@
 (() => {
   const refs = {
-    portfolioLinkHeader: document.querySelector('.js-open-portfolio'),
-    portfolioLinkMobMenu: document.querySelector('.js-portfolio'),
+    portfolioLinkHeader: document.querySelector('.js-portfolio-header'),
+    portfolioLinkMobMenu: document.querySelector('.js-portfolio-menu'),
     portfolioSection: document.querySelector('.js-portfolio-section'),
     heroSection: document.querySelector('.js-hero'),
     propertiesSection: document.querySelector('.js-properties'),
@@ -9,6 +9,7 @@
     // sliderSection: document.querySelector('.js-slider'),
     contactsSection: document.querySelector('.js-contacts'),
     footer: document.querySelector('.js-footer'),
+    mobMenu: document.querySelector('.js-menu-container'),
   };
 
   refs.portfolioLinkHeader?.addEventListener('click', openPortfolio);
@@ -22,5 +23,6 @@
     refs.contactsSection?.classList.add('is-hidden');
     refs.footer?.classList.remove('is-hidden');
     refs.portfolioSection?.classList.toggle('is-hidden');
+    refs.mobMenu?.classList.add('is-hidden');
   }
 })();
