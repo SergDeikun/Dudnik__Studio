@@ -5,7 +5,7 @@
   "homepage": "https://SergDeikun/Dudnik__Studio",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /kitchen/"
+    "build": "parcel build src/*.html --public-url /Dudnik__Studio/"
   },
   "repository": {
     "type": "git",
