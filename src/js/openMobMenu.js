@@ -1,6 +1,6 @@
 (() => {
   const refs = {
-    menu: document.querySelector('.js-menu-container'),
+    mobMenu: document.querySelector('.js-menu-container'),
     openMenuBtn: document.querySelector('.js-open-menu'),
     closeMenuBtn: document.querySelector('.js-close-menu'),
     aboutUs: document.querySelector('.js-about-us'),
@@ -15,6 +15,6 @@
   refs.contacts?.addEventListener('click', toggleMenu);
 
   function toggleMenu() {
-    refs.menu?.classList.toggle('is-hidden');
+    refs.mobMenu?.classList.toggle('is-hidden');
   }
 })();
