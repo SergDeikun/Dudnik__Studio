@@ -1,2 +1,5 @@
-import { Fancybox, Carousel, Panzoom } from '@fancyapps/ui';
-import '@fancyapps/ui/dist/fancybox.css';
+import { Fancybox } from '@fancyapps/ui/src/Fancybox/Fancybox.js';
+
+Fancybox.bind('[data-fancybox="single"]', {
+  groupAttr: false,
+});
