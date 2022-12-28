@@ -27,6 +27,7 @@
   refs.abotUsLinkMobMenu?.addEventListener('click', openAboutUs);
 
   function openAboutUs() {
+    console.log('ok');
     refs.heroSection?.classList.remove('is-hidden');
     refs.propertiesSection?.classList.remove('is-hidden');
     refs.aboutSection?.classList.remove('is-hidden');
