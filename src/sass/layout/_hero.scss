@@ -47,7 +47,8 @@
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
-  color: $main-text-color;
+  // color: $main-text-color;
+  color:black;
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
