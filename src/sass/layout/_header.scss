@@ -1,6 +1,9 @@
 .header {
-  // position: absolute;
   position: fixed;
+  
+  @media screen and(min-width:768px) {
+    position: absolute;
+  }
   top: 0;
   left: 0;
   width: 100%;

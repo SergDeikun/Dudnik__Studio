@@ -1,5 +1,5 @@
 .contacts-container {
-  text-align: center;
+  // text-align: center;
 }
 
 .contacts__title {
@@ -39,7 +39,7 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: $second-text-color;
-  transition: fill 2150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {

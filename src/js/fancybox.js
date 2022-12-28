@@ -1,6 +1,6 @@
 import { Fancybox } from '@fancyapps/ui/src/Fancybox/Fancybox.js';
 
-Fancybox.bind('[data-fancybox="gallery"]', {
+export const fancybox = Fancybox.bind('[data-fancybox="gallery"]', {
   Thumbs: false,
   Toolbar: false,
 
